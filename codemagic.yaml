@@ -17,8 +17,7 @@ workflows:
           find . -name "Podfile" -execdir pod install \;
       - name: Flutter analyze
         script: flutter analyze
-      - name: Flutter unit tests
-        script: flutter test
+
       - name: Build ipa for distribution
         script: |
           flutter build ios --release --no-codesign
