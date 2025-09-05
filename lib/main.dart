@@ -129,7 +129,7 @@ class _AttendanceTrackerState extends State<AttendanceTracker> {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.05),
+                      color: Colors.black.withValues(alpha: 0.05),
                       blurRadius: 20,
                       offset: Offset(0, 5),
                     ),
@@ -151,10 +151,10 @@ class _AttendanceTrackerState extends State<AttendanceTracker> {
                       child: Container(
                         padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                         decoration: BoxDecoration(
-                          color: _getDaysColor().withOpacity(0.1),
+                          color: _getDaysColor().withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                            color: _getDaysColor().withOpacity(0.3),
+                            color: _getDaysColor().withValues(alpha: 0.3),
                             width: 1,
                           ),
                         ),
@@ -256,7 +256,7 @@ class _AttendanceTrackerState extends State<AttendanceTracker> {
                           borderRadius: BorderRadius.circular(16),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.red.withOpacity(0.3),
+                              color: Colors.red.withValues(alpha: 0.3),
                               blurRadius: 12,
                               offset: Offset(0, 4),
                             ),
@@ -305,7 +305,7 @@ class _AttendanceTrackerState extends State<AttendanceTracker> {
                           borderRadius: BorderRadius.circular(16),
                           boxShadow: [
                             BoxShadow(
-                              color: Colors.green.withOpacity(0.3),
+                              color: Colors.green.withValues(alpha: 0.3),
                               blurRadius: 12,
                               offset: Offset(0, 4),
                             ),
@@ -349,10 +349,10 @@ class _AttendanceTrackerState extends State<AttendanceTracker> {
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                 decoration: BoxDecoration(
-                  color: _getDaysColor().withOpacity(0.1),
+                  color: _getDaysColor().withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(25),
                   border: Border.all(
-                    color: _getDaysColor().withOpacity(0.2),
+                    color: _getDaysColor().withValues(alpha: 0.2),
                     width: 1,
                   ),
                 ),
